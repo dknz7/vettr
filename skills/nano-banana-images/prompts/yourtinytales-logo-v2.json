@@ -1,0 +1,18 @@
+{
+  "prompt": "A clean, minimalist children's book brand logo for 'YourTinyTales' designed in a strict horizontal side-by-side layout. LEFT SIDE: a compact, simplified illustrated emblem — a small open book with softly glowing golden pages, and just two or three tiny whimsical characters gently emerging from it: a little bear in an explorer hat and a small rabbit with round spectacles, both no larger than the book itself. The characters are simplified, iconic, almost like a charming stamp or badge — clean outlines, minimal detail, warm and friendly. A few tiny golden stars scatter lightly around the book. The emblem sits neatly in a circle or subtle soft-edged badge shape. RIGHT SIDE: the brand name 'YourTinyTales' set in a single line in a bold, rounded, friendly serif typeface — thick strokes, warm and inviting, in deep midnight navy. The text is large, confident, and well-kerned. NO tagline, NO sub-text beneath the brand name. The two elements — emblem on the left, text on the right — sit on the same horizontal baseline, perfectly balanced side by side with comfortable spacing between them. Background is clean white. The overall composition is tight, minimal, and logo-ready — it should feel like a professional brand mark you would see on a premium children's product. Colour palette: warm golden yellow, soft coral, sky teal, and deep midnight navy. Painterly storybook illustration style but restrained and clean — not busy or cluttered. Think of it as a refined, smaller version of a classic picture book illustration distilled into a wordmark-style logo.",
+  "negative_prompt": "tagline, sub-text, 'Stories Made For Them', vertical stacked layout, text below illustration, text above illustration, photorealistic, 3D render, CGI, plastic look, corporate logo, cold colours, dark themes, gradient background, heavy shadows, over-detailed clutter, illegible text, blurry text, distorted letters, generic clip art, flat lifeless vector, sterile minimalism, too many characters, too many floating elements, busy background, neon colours, horror, realistic faces, square layout, centred single column layout, text centred under image",
+  "api_parameters": {
+    "google_search": false,
+    "resolution": "2K",
+    "output_format": "png",
+    "aspect_ratio": "16:9"
+  },
+  "settings": {
+    "resolution": "2K",
+    "style": "minimal storybook illustration, clean brand mark, warm painterly but restrained",
+    "lighting": "soft even ambient light, gentle warm glow from book pages",
+    "camera_angle": "straight-on flat logo view",
+    "depth_of_field": "flat illustration — all elements sharp and crisp",
+    "quality": "print-ready, clean edges, high detail on typography, logo-quality output"
+  }
+}

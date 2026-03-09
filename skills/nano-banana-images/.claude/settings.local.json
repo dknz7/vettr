@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__plugin_context7_context7__resolve-library-id",
+      "mcp__plugin_context7_context7__query-docs",
+      "WebFetch(domain:ai.google.dev)",
+      "Bash(python \"C:\\\\Users\\\\dicke\\\\.claude\\\\skills\\\\nano-banana-images\\\\scripts\\\\generate_image.py\" \".\\\\prompts\\\\yourtinytales-logo.json\" \".\\\\images\\\\logos\\\\yourtinytales-logo.png\" \"1:1\" nbpro)",
+      "Bash(python \"C:\\\\Users\\\\dicke\\\\.claude\\\\skills\\\\nano-banana-images\\\\scripts\\\\generate_image.py\" \".\\\\prompts\\\\yourtinytales-logo.json\" \".\\\\images\\\\logos\\\\yourtinytales-logo.png\" \"1:1\" nb2)",
+      "Bash(python -c \":*)",
+      "Bash(python \"C:\\\\Users\\\\dicke\\\\.claude\\\\skills\\\\nano-banana-images\\\\scripts\\\\generate_image.py\" \".\\\\prompts\\\\yourtinytales-logo-v2.json\" \".\\\\images\\\\logos\\\\yourtinytales-logo-v2.png\" \"16:9\" nbpro)"
+    ]
+  }
+}

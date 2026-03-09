@@ -1,0 +1,18 @@
+{
+  "prompt": "A stunning, professionally designed children's book brand logo for 'YourTinyTales', a personalised online bookstore for toddlers under 5 years old. The logo is rendered in a richly detailed, hand-crafted illustration style — warm, painterly, with slightly textured brushwork that feels like a beloved storybook come to life. Central focal element: a large, magical open book floating at a slight angle, its pages glowing with warm golden light as if radiating wonder from within. From the open pages, a swirling cascade of tiny whimsical characters spill outward and upward: a curious little bear in a red explorer's hat, a tiny rabbit with round spectacles reading a scroll, a wide-eyed owl perched on a letter, a friendly dragon no bigger than a teacup curling its tail around a stack of books. Scattered throughout: golden stars, sparkle trails, tiny floating letters of the alphabet, miniature hot air balloons, and colourful illustrated confetti in coral, teal, sunshine yellow, and lavender. The composition is joyful and full of movement — every corner suggests a new adventure is just a page-turn away. The book itself has a beautifully illustrated cover with the word 'YOURS' in personalised script, suggesting customisation. At the base of the composition, the brand name 'YourTinyTales' is rendered in a beautifully crafted, rounded, friendly serif typeface — thick strokes, bubbly but refined, in deep midnight navy with a subtle golden drop shadow. Beneath it, a small tagline in a lighter weight: 'Stories Made For Them.' The colour palette is vibrant but harmonious: warm golden yellows, soft coral reds, sky teal, creamy whites, and rich midnight navy as grounding anchor colour. The overall shape of the logo fits neatly within a square format with generous breathing room. The background is clean cream-white with a very subtle paper texture — no gradients. The illustration style should evoke the warmth of classic picture book illustrators like Quentin Blake or Oliver Jeffers — loose, expressive, full of personality, not sterile or corporate. This is a logo that a toddler would point at and giggle, and a parent would trust immediately. High detail, high resolution, print-ready quality. No photographic elements. No AI plastic sheen. Pure illustrated charm.",
+  "negative_prompt": "photorealistic, photo, photography, 3D render, CGI, plastic look, corporate logo, cold colours, dark themes, scary, violence, adult themes, gradient background, drop shadows on background, heavy shadows, over-detailed clutter, illegible text, blurry text, distorted letters, generic clip art, flat vector with no texture, sterile minimalism, too many competing focal points, muddy colours, overly dark palette, serif that looks like Times New Roman, Comic Sans, childish bad typography, neon colours, fluorescent palette, horror elements, realistic faces",
+  "api_parameters": {
+    "google_search": false,
+    "resolution": "2K",
+    "output_format": "png",
+    "aspect_ratio": "1:1"
+  },
+  "settings": {
+    "resolution": "2K",
+    "style": "hand-crafted storybook illustration, painterly, warm, whimsical, picture-book aesthetic",
+    "lighting": "warm golden ambient glow emanating from the open book pages, soft rim highlights on characters",
+    "camera_angle": "slight front-facing elevated angle on book, balanced logo composition",
+    "depth_of_field": "flat illustration plane — all elements equally sharp and crisp",
+    "quality": "print-ready, high detail illustration, clean edges, no noise, richly coloured"
+  }
+}
