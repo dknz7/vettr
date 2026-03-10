@@ -1,6 +1,10 @@
-# Vettr
+# Hivemind
 
-AI-powered product research SaaS that replaces biased review sites (G2, affiliate blogs, sponsored YouTube) with objective, source-cited comparative dashboards.
+AI-powered product research platform that replaces biased review sources with objective, source-cited comparative dashboards. Works for **any product category** — software, appliances, vehicles, consumer goods, services — anything you can spend money on.
+
+## Core Value Proposition
+
+Dozens of sources. One collective intelligence. Hivemind pulls data from across the web — reviews, specs, forums, expert teardowns, pricing databases — and synthesizes it into a single curated, severity-weighted opinion. No single reviewer, influencer, or affiliate gets to control the narrative. The swarm does the research. You make the decision.
 
 ## Project Status
 
@@ -22,11 +26,20 @@ AI-powered product research SaaS that replaces biased review sites (G2, affiliat
 
 - Solo technical DevOps engineer learning AI/LLM economics.
 - Strong on infra, learning token cost optimization.
-- Design preference: glassmorphic "Antigravity OS" — dark #08080c, purple/blue gradients, Inter font, frosted glass panels.
 
 ## Concept
 
 Users input product names + URLs → system performs deep AI-powered research (40-80 sources per product) → outputs structured, source-cited comparative dashboards.
+
+**Product scope is universal.** Example categories:
+- Software & SaaS (project management tools, CRMs, design tools)
+- Consumer electronics (laptops, phones, cameras)
+- Home appliances (ovens, dishwashers, vacuums)
+- Vehicles (cars, motorcycles, e-bikes)
+- Everyday goods (cat food, knife sets, mattresses)
+- Services (insurance providers, internet plans, gyms)
+
+The research pipeline adapts per category but the artifact structure is consistent.
 
 ### 6-Artifact Pipeline Per Product
 
@@ -101,8 +114,22 @@ Users input product names + URLs → system performs deep AI-powered research (4
 
 ## Competitive Positioning
 
-Replaces: G2 (pay-to-play), Capterra/TrustRadius, affiliate blogs, sponsored YouTube.
-Differentiator: No pay-to-play rankings, no affiliate bias, source-cited, severity-weighted.
+Replaces: G2 (pay-to-play), Capterra/TrustRadius, affiliate blogs, sponsored YouTube, paid influencer reviews.
+Differentiator: No pay-to-play rankings, no affiliate bias, source-cited, severity-weighted. Works across ALL product categories, not just software.
+
+## Brand
+
+**Name:** Hivemind
+**Domain:** askthehivemind.com (registered via Cloudflare, 1-year validation period)
+**Tagline:** The swarm does the research.
+**CTA pattern:** "Ask the Hivemind" (buttons, landing page, marketing copy)
+**Logo concept:** Abstract hexagonal cell / neural cluster mark. Fits glassmorphic aesthetic — frosted hex shapes with purple/blue gradient glow. Single logomark that works at favicon scale.
+**Brand voice:** Collective intelligence. Confident, precise, anti-BS. Not one opinion — every opinion, distilled.
+**Design language:** Glassmorphic "Antigravity OS" — dark #08080c background, purple/blue gradients, Inter font, frosted glass panels.
+**Naming metaphor:** The hivemind = many sources working as one intelligence. Maps directly to the product mechanic of aggregating 40-80 sources into a single synthesized report.
+**Future consideration:** If revenue justifies it, acquire askthehivemind.ai (~$70/yr) as a redirect for brand polish.
+
+**Previous working names:** Vettr (too obscure), ZeroDoubt (too generic). Both retired.
 
 ## Open Questions
 
@@ -110,16 +137,18 @@ Differentiator: No pay-to-play rankings, no affiliate bias, source-cited, severi
 - Source quality filtering (avoiding SEO spam)
 - Caching strategy (TTL, invalidation, freshness indicators)
 - Legal: scraping + summarizing copyrighted content at scale
-- Competitive landscape for Vettr itself
+- Competitive landscape for the platform itself
 - MVP scope definition
 - Handling products with very little online presence
 - Audio quality vs NotebookLM's conversational podcast style
 - Team features scope (shared reports, comments, export permissions)
 - White-label / API access for agencies
+- Trademark search in class 42 (SaaS) and class 35 (market research) for "Hivemind"
 
 ## Next Steps
 
 1. Deep planning session — identify and fill knowledge gaps
-2. Competitive landscape research for Vettr itself
+2. Competitive landscape research for the platform itself
 3. MVP scope definition
-4. Landing page for demand validation
+4. Landing page for demand validation at askthehivemind.com
+5. Trademark search for "Hivemind" in relevant classes

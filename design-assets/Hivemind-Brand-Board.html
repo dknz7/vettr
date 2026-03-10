@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hivemind Brand Identity & Logo Export</title>
+    <style>
+        body {
+            /* Antigravity OS Dark Theme */
+            background-color: #08080c;
+            color: #ffffff;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 2rem;
+            box-sizing: border-box;
+        }
+
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 24px;
+            padding: 4rem;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+            max-width: 800px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .logo-container {
+            width: 100%;
+            max-width: 400px;
+            aspect-ratio: 400 / 180;
+            margin-bottom: 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* Nice subtle background so the edges are visible but seamless */
+            background: transparent;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin: 0 0 0.5rem 0;
+            letter-spacing: -0.05em;
+        }
+
+        .subtitle {
+            color: #a1a1aa;
+            font-size: 1rem;
+            margin-bottom: 2.5rem;
+            line-height: 1.5;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 1rem;
+        }
+
+        button {
+            background: #8B5CF6;
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            font-weight: 500;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(139, 92, 246, 0.4);
+        }
+
+        button.secondary {
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: none;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        button.secondary:hover {
+            background: rgba(255, 255, 255, 0.15);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="glass-panel">
+        <div class="logo-container" id="svg-wrapper">
+            <!-- SVG injected here -->
+        </div>
+
+        <h1>Hivemind Logotype</h1>
+        <p class="subtitle">
+            Core typography element featuring the Inter 900 font and vibrant purple full stop. Ready to be exported and
+            composited with a generated shape lockup in Photoshop.
+        </p>
+
+        <div class="button-group">
+            <button onclick="downloadPNG()">Download 1600x720 PNG</button>
+            <button class="secondary" onclick="downloadSVG()">Download SVG</button>
+        </div>
+    </div>
+
+    <!-- Hidden canvas for rendering PNG -->
+    <canvas id="canvas" style="display:none;"></canvas>
+
+    <script>
+        const rawSVG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 180" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&amp;display=swap');
+    </style>
+  </defs>
+  <text x="20" y="122" font-family="'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="105" fill="#ffffff" letter-spacing="-0.03em">
+    Hivemind<tspan fill="#8B5CF6">.</tspan>
+  </text>
+</svg>`;
+
+        document.getElementById('svg-wrapper').innerHTML = rawSVG;
+
+        function downloadSVG() {
+            const blob = new Blob([rawSVG], { type: 'image/svg+xml' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'hivemind-logotype.svg';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+
+        function downloadPNG() {
+            const canvas = document.getElementById('canvas');
+            const ctx = canvas.getContext('2d');
+
+            canvas.width = 1600;
+            canvas.height = 720;
+
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            const img = new Image();
+            const svgData = "data:image/svg+xml;base64," + btoa(unescape(encodeURIComponent(rawSVG)));
+
+            img.onload = function () {
+                ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+
+                const pngData = canvas.toDataURL('image/png');
+                const a = document.createElement('a');
+                a.href = pngData;
+                a.download = 'hivemind-logotype-1600.png';
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+            };
+            img.src = svgData;
+        }
+    </script>
+</body>
+
+</html>
